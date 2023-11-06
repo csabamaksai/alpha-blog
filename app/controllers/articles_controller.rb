@@ -1,7 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
-  def show
-  end
+  def show; end
 
   def index
     @articles = Article.all
@@ -11,8 +10,7 @@ class ArticlesController < ApplicationController
     @article = Article.new # Create a new instance of Article at the first page load so be able to use
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @article.update(article_params)
