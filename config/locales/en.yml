@@ -31,3 +31,7 @@ en:
   hello: "Hello world"
   create_a_new_article: "Create a new article"
   errors_prohibited_this_article_from_being_saved: "The following errors prevented the article from being saved:"
+  edit_article: "Edit article"
+  about: "About"
+  articles: "Articles"
+  home: "Home"
