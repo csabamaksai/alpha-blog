@@ -66,7 +66,6 @@
     <orderEntry type="library" scope="PROVIDED" name="io-console (v0.6.0, asdf: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="irb (v1.8.3, asdf: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.11.5, asdf: 3.2.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="jsbundling-rails (v1.2.1, asdf: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v2.6.3, asdf: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="language_server-protocol (v3.17.0.3, asdf: 3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.21.4, asdf: 3.2.2) [gem]" level="application" />
@@ -400,23 +399,6 @@
           <RakeTaskImpl id="importmap">
             <subtasks>
               <RakeTaskImpl description="Setup Importmap for the app" fullCommand="importmap:install" id="install" />
-            </subtasks>
-          </RakeTaskImpl>
-          <RakeTaskImpl id="javascript">
-            <subtasks>
-              <RakeTaskImpl description="Build your JavaScript bundle" fullCommand="javascript:build" id="build" />
-              <RakeTaskImpl description="Remove JavaScript builds" fullCommand="javascript:clobber" id="clobber" />
-              <RakeTaskImpl description="Install JavaScript dependencies" fullCommand="javascript:install" id="install" />
-              <RakeTaskImpl id="install">
-                <subtasks>
-                  <RakeTaskImpl description="Install Bun" fullCommand="javascript:install:bun" id="bun" />
-                  <RakeTaskImpl description="Install esbuild" fullCommand="javascript:install:esbuild" id="esbuild" />
-                  <RakeTaskImpl description="Install node-specific elements for bundlers that use node/yarn" fullCommand="javascript:install:node_shared" id="node_shared" />
-                  <RakeTaskImpl description="Install rollup.js" fullCommand="javascript:install:rollup" id="rollup" />
-                  <RakeTaskImpl description="Install shared elements for all bundlers" fullCommand="javascript:install:shared" id="shared" />
-                  <RakeTaskImpl description="Install Webpack" fullCommand="javascript:install:webpack" id="webpack" />
-                </subtasks>
-              </RakeTaskImpl>
             </subtasks>
           </RakeTaskImpl>
           <RakeTaskImpl id="log">
