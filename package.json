@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
     "@hotwired/turbo-rails": "^7.3.0",
@@ -21,7 +24,26 @@
     "build:css": "yarn build:css:compile && yarn build:css:prefix",
     "watch:css": "nodemon --watch ./app/assets/stylesheets/ --ext scss --exec \"yarn build:css\""
   },
-    "browserslist": [
+  "browserslist": [
     "defaults"
-  ]
+  ],
+  "name": "alpha-blog",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/csabamaksai/alpha-blog.git"
+  },
+  "author": "Csaba Maksai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csabamaksai/alpha-blog/issues"
+  },
+  "homepage": "https://github.com/csabamaksai/alpha-blog#readme"
 }
